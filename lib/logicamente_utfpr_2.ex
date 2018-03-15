@@ -4,15 +4,15 @@ defmodule LogicamenteUtfpr2 do
   """
 
   @doc """
-  Hello world.
+  Verifica a sintaxe de uma fórmula da lógica clássica proposicional.
 
   ## Examples
 
-      iex> LogicamenteUtfpr2.hello
-      :world
+      iex> LogicamenteUtfpr2.verifica(:p)
+      true
 
   """
-  def hello do
-    :world
+  def verifica(f) when is_atom(f) do
+    true
   end
 end
